@@ -1,0 +1,16 @@
+{
+  "name": "mf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devs": "npm run dev --prefix ./mf_provider && npm run dev --prefix ./mf_consumer_host",
+    "dev": "concurrently \"cd ./mf_provider; npm run dev\" \"cd mf_consumer_host; npm run dev\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
